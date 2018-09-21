@@ -1,0 +1,91 @@
+/*
+    Styles the site.
+    Author: Ryan Wahl
+    Date: 9/21/18
+*/
+/* Formatting the page layout */
+header>nav {
+    display: table;
+    width: 100%;
+}
+
+header>nav a {
+    padding: 10px;
+    text-decoration: none;
+}
+
+nav>ul {
+    display: table-row;
+}
+
+nav>ul>li {
+    display: table-cell;
+    text-align: center;
+}
+
+nav>ul>li>a {
+    display: block;
+}
+
+img {
+    float: left;
+}
+
+section#info {
+    float: right;
+    width: 85%;
+}
+
+section#info h2 {
+    text-align: center;
+    text-decoration: center;
+    text-decoration: underline;
+    font-size: 1.9em;
+}
+
+/* 
+    All of the link colors.
+*/
+
+header>nav a:visited,
+header>nav a:link {
+    background-color: black;
+    color: white;
+}
+
+header>nav a:visited.active,
+header>nav a:link.active {
+    background-color: rgb(151, 150, 150);
+    color: white;
+}
+
+header>nav a:hover,
+header>nav a:link {
+    background-color: gray;
+    color: white;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+section#skills {
+    float: right;
+    width: 75%;
+}
+
+section#skills li>ul>li {
+    border: 1px solid black;
+    list-style-type: none;
+    margin-right: 10em;
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+section#skills li>ul>li>section {
+    width: 100%;
+    background-color: lightblue;
+    display: inline-block;
+    text-align: center;
+}
