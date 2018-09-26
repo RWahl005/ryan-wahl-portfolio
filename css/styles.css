@@ -38,9 +38,27 @@ section#info {
 
 section#info h2 {
     text-align: center;
-    text-decoration: center;
     text-decoration: underline;
     font-size: 1.9em;
+}
+
+section#info h3 {
+    text-align: center;
+    font-size: 1.6em;
+}
+
+section#info p {
+    text-indent: 2em;
+}
+
+section#info ul {
+    text-align: center;
+    list-style-type: none;
+}
+
+section#info li::before {
+    content: '\2219';
+    font-size: 2em;
 }
 
 /* 
