@@ -1,0 +1,19 @@
+/* Css for the pages like experience.html and skills.html */
+
+section {
+    width: 73%;
+    margin: auto;
+}
+
+section p {
+    text-align: justify;
+}
+
+/* section h2 {
+    text-align: center;
+} */
+
+section ul {
+    width: 20%;
+    margin: auto;
+}

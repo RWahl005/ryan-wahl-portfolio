@@ -1,0 +1,44 @@
+/*
+    Css page for the index.html
+*/
+
+html {
+    background-color: gray;
+}
+
+section>nav {
+    display: table;
+    width: 75%;
+    margin: auto;
+    margin-top: 25em;
+}
+
+section>nav a {
+    padding: 10px;
+    text-decoration: none;
+    background-color: rgb(73, 73, 73);
+    width: 30%;
+    margin: auto;
+    color: white;
+}
+
+section>nav a:hover {
+    background-color: rgb(95, 94, 94);
+}
+
+section>ul {
+    display: table-row;
+}
+
+section>ul>li {
+    display: table-cell;
+    text-align: center;
+}
+
+section>ul>li>a {
+    display: block;
+}
+
+section>p {
+    text-align: center;
+}
