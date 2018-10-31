@@ -4,6 +4,11 @@
     Date: 9/21/18
 */
 /* Formatting the page layout */
+
+body {
+    min-width: 720px;
+}
+
 header>nav {
     display: table;
     width: 100%;
@@ -25,10 +30,6 @@ nav>ul>li {
 
 nav>ul>li>a {
     display: block;
-}
-
-img {
-    float: left;
 }
 
 section#info {

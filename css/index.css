@@ -3,14 +3,14 @@
 */
 
 html {
-    background-color: gray;
+    background-color: rgba(128, 128, 128, 0.548);
 }
 
 section>nav {
     display: table;
     width: 75%;
     margin: auto;
-    margin-top: 25em;
+    margin-top: 2em;
 }
 
 section>nav a {
@@ -20,6 +20,24 @@ section>nav a {
     width: 30%;
     margin: auto;
     color: white;
+}
+
+figure {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+html,
+body,
+section {
+    width: 100%;
 }
 
 section>nav a:hover {
@@ -41,4 +59,8 @@ section>ul>li>a {
 
 section>p {
     text-align: center;
+}
+
+h1 {
+    color: white;
 }
