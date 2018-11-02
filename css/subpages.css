@@ -9,9 +9,9 @@ section p {
     text-align: justify;
 }
 
-/* section h2 {
+section h2 {
     text-align: center;
-} */
+}
 
 /* section ul {
     width: 40%;
@@ -19,13 +19,27 @@ section p {
 } */
 
 footer {
+    clear: both;
     background-color: darkgray;
     width: 100%;
 }
 
-footer {
+/* footer {
     position: absolute;
     bottom: 0;
+} */
+
+footer#footer1 {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+
+footer#footer2 {
+    width: 100%;
+
 }
 
 footer p {
@@ -48,4 +62,8 @@ footer a {
 
 footer a:hover {
     color: rgb(230, 227, 227);
+}
+
+body {
+    min-width: 700px;
 }
