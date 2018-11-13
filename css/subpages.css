@@ -1,4 +1,13 @@
-/* Css for the pages like experience.html and skills.html */
+@charset "utf-8";
+/* 
+    CSS Styles for all pages except the index.html
+    Author: Ryan Wahl
+    Date: 11.13.18
+    File Name: subpages.css
+
+*/
+
+/* Section Styles */
 
 section {
     width: 73%;
@@ -13,10 +22,7 @@ section h2 {
     text-align: center;
 }
 
-/* section ul {
-    width: 40%;
-    margin: auto;
-} */
+/* Footer Styles */
 
 footer {
     clear: both;
@@ -24,18 +30,12 @@ footer {
     width: 100%;
 }
 
-/* footer {
-    position: absolute;
-    bottom: 0;
-} */
-
 footer#footer1 {
     position: fixed;
     left: 0;
     bottom: 0;
     width: 100%;
 }
-
 
 footer#footer2 {
     width: 100%;
@@ -64,6 +64,15 @@ footer a:hover {
     color: rgb(230, 227, 227);
 }
 
+/* Body Styles */
+
 body {
     min-width: 700px;
+}
+
+/* List Styles */
+
+ul.center-exp {
+    width: 25%;
+    margin: auto;
 }

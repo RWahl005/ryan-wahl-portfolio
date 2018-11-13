@@ -1,13 +1,18 @@
+@charset "utf-8";
 /*
-    Styles the site.
+    Generic Style rules that would apply to the entire site.
     Author: Ryan Wahl
-    Date: 9/21/18
+    Date: 9.21.18
+    Pages Useb By: All
 */
+
 /* Formatting the page layout */
 
 body {
     min-width: 720px;
 }
+
+/* Top Naviagtion Bar Styles */
 
 header>nav {
     display: table;
@@ -31,6 +36,11 @@ nav>ul>li {
 nav>ul>li>a {
     display: block;
 }
+
+/* 
+    Info Section Layout 
+    DEPRICATED - to be removed.   
+*/
 
 section#info {
     float: right;
@@ -88,6 +98,11 @@ h1 {
     text-align: center;
     font-size: 3em;
 }
+
+/* 
+    Section with in id of skills 
+    DEPRECATED - To be removed.
+*/
 
 section#skills {
     float: right;

@@ -1,11 +1,23 @@
+@charset "utf-8";
 /*
-    Css page for the index.html
+   CSS Styles for the index page
+   Page Refrenced: index.html
+   Author: Ryan Wahl
+   Date: 11.13.18
 */
 
+/* Html Styles */
 html {
     background-color: rgba(128, 128, 128, 0.548);
 }
 
+html,
+body,
+section {
+    width: 100%;
+}
+
+/* Navigation Styles */
 section>nav {
     display: table;
     width: 75%;
@@ -20,24 +32,6 @@ section>nav a {
     width: 30%;
     margin: auto;
     color: white;
-}
-
-figure {
-    display: block;
-    width: 50%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-figure img {
-    width: 100%;
-    opacity: 0.9;
-}
-
-html,
-body,
-section {
-    width: 100%;
 }
 
 section>nav a:hover {
@@ -57,6 +51,21 @@ section>ul>li>a {
     display: block;
 }
 
+/* Figure Image Styles */
+
+figure {
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+figure img {
+    width: 100%;
+    opacity: 0.9;
+}
+
+/* Section Styles */
 section>p {
     text-align: center;
 }

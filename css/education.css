@@ -1,3 +1,12 @@
+@charset "utf-8";
+/* 
+    CSS file for the page education.html.
+    Author: Ryan Wahl
+    Date: 11.13.18
+*/
+
+/* For the section of edu (The grid of classes) */
+
 section#edu {
     width: 75%;
     margin-left: auto;
@@ -8,6 +17,8 @@ section#edu {
 body {
     box-sizing: border-box;
 }
+
+/* Grids for the grid of classes */
 
 .row {
     clear: both;
@@ -31,6 +42,8 @@ body {
 .column-100 {
     width: 100%;
 }
+
+/* Education Grid Styles */
 
 #edu h2 {
     text-align: center;
@@ -59,6 +72,8 @@ body {
 .column-50 {
     padding-bottom: 10px;
 }
+
+/* List Styles */
 
 section#list {
     clear: both;
