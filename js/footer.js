@@ -8,6 +8,13 @@
 
 */
 
+// If the page is at the top then change the footer link #2 text color to gray.
+
+if (window.pageYOffset == 0)
+    this.document.getElementById("footer1").getElementsByTagName("a")[1].style.color = "gray";
+else
+    this.document.getElementById("footer1").getElementsByTagName("a")[1].style.color = "white";
+
 /* Code break down:
     On window scroll -
         if an element with an id of footer2 exists then
@@ -30,18 +37,12 @@ window.onscroll = function (e) {
         } else {
             this.document.getElementById("footer1").style.display = "block";
             this.document.getElementById("footer2").style.display = "none";
+            if (window.pageYOffset == 0)
+                this.document.getElementById("footer1").getElementsByTagName("a")[1].style.color = "gray";
+            else
+                this.document.getElementById("footer1").getElementsByTagName("a")[1].style.color = "white";
         }
 
     }
-
-    // // window.innerHeight + 
-    // var element = this.document.getElementsByTagName("nav")[0];
-    // // if (element.scrollTop + element.innerHeight >= this.scrollHeight) {
-    // console.info(this.document.body.scrollTop);
-    // if (this.document.body.scrollTop == 0) {
-    //     this.document.getElementById("footer1").getElementsByTagName("a")[1].style.color = "gray";
-    // } else {
-    //     this.document.getElementById("footer1").getElementsByTagName("a")[1].style.color = "blue";
-    // }
 
 };

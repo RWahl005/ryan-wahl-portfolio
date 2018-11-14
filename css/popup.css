@@ -1,0 +1,26 @@
+/* 
+    Test css junk
+*/
+div#west-mec {
+    background-color: gray;
+    z-index: 1;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+div#west-mec button {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+div#west-mec p {
+    margin: 5px;
+    color: white;
+}
+
+div#west-mec h1 {
+    color: white;
+}

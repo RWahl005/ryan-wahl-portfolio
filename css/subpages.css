@@ -16,6 +16,7 @@ section {
 
 section p {
     text-align: justify;
+    text-indent: 1em;
 }
 
 section h2 {
@@ -75,4 +76,20 @@ body {
 ul.center-exp {
     width: 25%;
     margin: auto;
+}
+
+ul.center-achieve {
+    width: 23%;
+    margin: auto;
+}
+
+/* Link styles */
+
+section p a {
+    color: gray;
+    text-decoration: none;
+}
+
+section p a:hover {
+    color: darkgray;
 }
