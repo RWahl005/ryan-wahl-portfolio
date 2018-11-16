@@ -1,26 +1,51 @@
 /*
-    Controls the popup menu for westmec.
+    Controls the generic popup menu for westmec.
+    UNUSED EXPERIMENTAL SYSTEM
 */
 
-var westmec = document.getElementById("west-mec");
+var westmec;
+var gtitle = "";
+var gheader = "";
+var gtext = "";
+var inits = false;
 
-westmec.style.display = "none"; //Hides the menu by default
+function init(id, title, header, text) {
+    westmec = document.getElementById(id);
+    westmec.style.display = "none"; //Hides the menu by default
+    gtitle = title;
+    gheader = header;
+    gtext = text;
+    console.info("who");
+    westmec.getElementsByTagName("p")[1].text = gtext;
+    westmec.getElementsByTagName("p")[0].textContent = gtitle;
+    westmec.getElementsByTagName("h1")[0].textContent = gheader;
+    init = true;
+    dragElement(westmec);
+}
+
+
 
 function openmenu() {
-    document.getElementById("west-mec").style.display = "block"; //Shows the menu.
+    if (!inits)
+        return;
+    westmec.style.display = "block"; //Shows the menu.
 }
 
 function closemenu() {
-    document.getElementById("west-mec").style.display = "none"; //Hides it again.
+    if (!inits)
+        return;
+    westmec.style.display = "none"; //Hides it again.
     // Resets the menu position.
     westmec.style.top = "50%";
     westmec.style.left = "50%";
 }
 
 // Test drag stuff
-dragElement(document.getElementById("west-mec")); //grabs the element and runs the function dragelement
+//grabs the element and runs the function dragelement
 
 function dragElement(elmnt) {
+    if (!inits)
+        return;
     var pos1 = 0,
         pos2 = 0,
         pos3 = 0,
