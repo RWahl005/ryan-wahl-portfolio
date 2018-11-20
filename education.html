@@ -23,6 +23,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/subpages.css">
     <link rel="stylesheet" href="css/education.css">
+    <link rel="stylesheet" href="css/popup.css">
 </head>
 
 <body>
@@ -41,14 +42,26 @@
         </nav>
     </header>
 
+    <div id="window">
+        <div id="windowheader">
+            <p>Header</p>
+        </div>
+        <h1>Title</h1>
+        <button onclick="closemenu()">X</button>
+        <p>testsssss.</p>
+    </div>
+
     <section>
         <h1>Education</h1>
 
-        <p>I have attended several schools. From junior high I went to schools in Bentonville, Arkansas. From
+        <p>I have attended several schools. From <a href="#" onclick='openmenu("Junior High", "The Junior high I wen to was named Washington Junior High. Junior high in Arkansas is 7th and 8th grade. It has its own building.", "Junior High in Arkansas")'>junior
+                high</a> I went to schools in
+            Bentonville, Arkansas. From
             highschool onword I have attended Liberty High School in Peoria, Arizona. I took Spanish I in 8th grade at
             my junior high. The summer between 8th grade and Freshman year I moved so I picked my classes last. Notable
             classes I took Freshman year were: Spanish II, Algebra I, Geometry H, AIM Chemistry, and Computer
-            Programming and Technology (College Credit). Sophmore year I took the following notable classes: Algebra II
+            Programming and Technology (<a onclick='openmenu("College Credit", "College Creidt is Dual Enrollment. I get credit for classes I take in high school. I got my credits through the Glendale Community College. With math dual enrollment classes I had to take a placement test.", "College Credit")'>College
+                Credit</a>). Sophmore year I took the following notable classes: Algebra II
             H, College Algebra H (College Credit), Game Design (College Credit), and Spanish III. Junior year I decided
             to take a program called west-mec to better my understanding in programming.</p>
 
@@ -170,6 +183,7 @@
      -->
     <!-- Used to control the footer. -->
     <script src="js/footer.js"></script>
+    <script src="js/generic_popup.js"></script>
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
