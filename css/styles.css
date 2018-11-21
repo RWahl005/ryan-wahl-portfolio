@@ -123,3 +123,9 @@ section#skills li>ul>li>section {
     display: inline-block;
     text-align: center;
 }
+
+/* Generic Image Styles */
+.img-center {
+    display: block;
+    margin: auto;
+}

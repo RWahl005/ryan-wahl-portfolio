@@ -8,7 +8,9 @@
 
 /* Html Styles */
 html {
-    background-color: rgba(128, 128, 128, 0.548);
+    /* background-color: rgba(128, 128, 128, 0.548); */
+    background: url("../img/code-back.jpg");
+    background-repeat: no-repeat;
 }
 
 html,

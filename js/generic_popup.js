@@ -1,12 +1,16 @@
 /*
     Controls the generic popup menu for westmec.
-    UNUSED EXPERIMENTAL SYSTEM
+    Used to dynamicly create popup menus.
 */
 
 if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     var elm = document.getElementById("window");
 
     elm.style.display = "none";
+
+    function openmenu(title, p, header) {
+        alert("That feature is disabled on mobile!");
+    }
 } else {
     var elm = document.getElementById("window");
 
