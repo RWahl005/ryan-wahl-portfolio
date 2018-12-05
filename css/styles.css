@@ -9,33 +9,12 @@
 /* Formatting the page layout */
 
 body {
-    min-width: 720px;
+    /* min-width: 720px; */
 }
 
 /* Top Naviagtion Bar Styles */
 
-header>nav {
-    display: table;
-    width: 100%;
-}
 
-header>nav a {
-    padding: 10px;
-    text-decoration: none;
-}
-
-nav>ul {
-    display: table-row;
-}
-
-nav>ul>li {
-    display: table-cell;
-    text-align: center;
-}
-
-nav>ul>li>a {
-    display: block;
-}
 
 /* 
     Info Section Layout 
@@ -128,4 +107,67 @@ section#skills li>ul>li>section {
 .img-center {
     display: block;
     margin: auto;
+}
+
+/* Media styles */
+
+@media only screen and (max-width: 480px) {
+    header>nav {
+        width: 100%;
+    }
+
+    header>nav a {
+        text-decoration: none;
+    }
+
+    header nav ul {
+        display: flex;
+        flex-flow: column nowrap;
+        list-style-type: none;
+        width: 100%;
+        padding: 0;
+        display: grid;
+        grid-template-rows: auto auto auto auto auto auto;
+        grid-template-columns: auto;
+        margin: 0;
+    }
+
+    header nav li,
+    header nav a {
+        text-align: center;
+        width: 100%;
+        display: block;
+    }
+
+    header nav a {
+        padding: 5px;
+    }
+
+}
+
+@media only screen and (min-width: 481px) {
+
+    /* Navigation Styles */
+    header>nav {
+        display: table;
+        width: 100%;
+    }
+
+    header>nav a {
+        padding: 10px;
+        text-decoration: none;
+    }
+
+    nav>ul {
+        display: table-row;
+    }
+
+    nav>ul>li {
+        display: table-cell;
+        text-align: center;
+    }
+
+    nav>ul>li>a {
+        display: block;
+    }
 }

@@ -1,0 +1,39 @@
+@charset "utf-8";
+
+/* 
+
+    Printer Styles for the printer.
+
+*/
+
+#edu {
+    page-break-inside: avoid;
+}
+
+.left {
+    float: none;
+}
+
+.right {
+    float: none;
+}
+
+footer {
+    display: none;
+}
+
+header {
+    display: none;
+}
+
+body::before {
+    content: "Ryan Wahl";
+    font-size: 15mm;
+    margin-left: 65mm;
+}
+
+#edu::before {
+    content: "High School Classes";
+    font-size: 10mm;
+    margin-left: 12mm;
+}

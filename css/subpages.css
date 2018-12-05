@@ -65,23 +65,9 @@ footer a:hover {
     color: rgb(230, 227, 227);
 }
 
-/* Body Styles */
-
-body {
-    min-width: 700px;
-}
-
 /* List Styles */
 
-ul.center-exp {
-    width: 25%;
-    margin: auto;
-}
 
-ul.center-achieve {
-    width: 23%;
-    margin: auto;
-}
 
 /* Link styles */
 
@@ -92,4 +78,35 @@ section p a {
 
 section p a:hover {
     color: darkgray;
+}
+
+/* Media Styles */
+@media only screen and (max-width: 480px) {
+    ul.center-exp {
+        width: 100%;
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    ul.center-achieve {
+        width: 100%;
+        margin: auto;
+    }
+}
+
+@media only screen and (min-width: 481px) {
+    ul.center-exp {
+        width: 25%;
+        margin: auto;
+    }
+
+    ul.center-achieve {
+        width: 23%;
+        min-width: 200px;
+        margin: auto;
+    }
+
+    #footer2 {
+        display: none;
+    }
 }

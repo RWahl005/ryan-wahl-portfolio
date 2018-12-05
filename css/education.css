@@ -91,3 +91,21 @@ section#edu {
 .left {
     float: left;
 }
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 480px) {
+    section#edu {
+        display: none;
+    }
+
+    .right {
+        display: block;
+        float: none;
+    }
+
+    .left {
+        display: block;
+        float: none;
+    }
+}

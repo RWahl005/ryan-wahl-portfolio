@@ -10,7 +10,8 @@
 html {
     /* background-color: rgba(128, 128, 128, 0.548); */
     background: url("../img/code-back.jpg");
-    background-repeat: no-repeat;
+    background-repeat: repeat;
+    background-size: 100%;
 }
 
 html,
@@ -74,4 +75,13 @@ section>p {
 
 h1 {
     color: white;
+}
+
+/* Media Styles */
+
+@media only screen and (max-width: 480px) {
+    body {
+        min-width: 0px;
+        /* display: flex; */
+    }
 }
