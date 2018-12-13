@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* 
     CSS file for the page education.html.
+    Page Designed For: education.html
     Author: Ryan Wahl
     Date: 11.13.18
 */
@@ -8,14 +9,17 @@
 /* For the section of edu (The grid of classes) */
 
 section#edu {
+    /* Centers the grid */
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(74, 197, 130);
+    /* Sets the corners to circles */
     border-radius: 20px;
 }
 
 body {
+    /* Sets the box size to border box so that the borders work */
     box-sizing: border-box;
 }
 
@@ -52,6 +56,7 @@ body {
 }
 
 #edu p::before {
+    /* Inserts in the bullet point and two spaces. */
     content: "\2022\0020\0020";
 }
 
@@ -61,6 +66,7 @@ body {
     margin: 2px;
 }
 
+/* Defines the border of the pages. */
 .column-50:nth-of-type(odd) {
     border-right: 1px solid white;
 }

@@ -11,13 +11,21 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ryan Wahl Portfolio</title>
-    <meta name="description" content="">
+    <!-- Sets the viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="manifest" href="site.webmanifest">
     <link rel="apple-touch-icon" href="icon.png">
     <!-- Place favicon.ico in the root directory -->
 
+    <!-- Style Sheet
+        Normalize is the reset sheet.
+        styles.css are styles used on all pages like the nav bar.
+        sub pages are styles used on pages that are not the index.
+        Education.css is a specific style sheet for this page.
+        The popup is for the popup menus.
+        The print is for the printer.
+    -->
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/styles.css" />
@@ -42,7 +50,7 @@
             </ul>
         </nav>
     </header>
-
+    <!-- This is the html vode of the popup menu -->
     <div id="window">
         <div id="windowheader">
             <p>Header</p>
@@ -51,21 +59,23 @@
         <button onclick="closemenu()">X</button>
         <p>testsssss.</p>
     </div>
-
+    <!-- End of popup menu -->
+    <!-- The main content of the page -->
     <section>
         <h1>Education</h1>
-
+        <!-- The paragraph -->
         <p>I have attended several schools. From <a href="#" onclick='openmenu("Junior High", "The Junior high I wen to was named Washington Junior High. Junior high in Arkansas is 7th and 8th grade. It has its own building.", "Junior High in Arkansas")'>junior
                 high</a> I went to schools in
             Bentonville, Arkansas. From
             highschool onword I have attended Liberty High School in Peoria, Arizona. I took Spanish I in 8th grade at
             my junior high. The summer between 8th grade and Freshman year I moved so I picked my classes last. Notable
             classes I took Freshman year were: Spanish II, Algebra I, Geometry H, AIM Chemistry, and Computer
-            Programming and Technology (<a onclick='openmenu("College Credit", "College Creidt is Dual Enrollment. I get credit for classes I take in high school. I got my credits through the Glendale Community College. With math dual enrollment classes I had to take a placement test.", "College Credit")'>College
+            Programming and Technology (<a href="#" onclick='openmenu("College Credit", "College Creidt is Dual Enrollment. I get credit for classes I take in high school. I got my credits through the Glendale Community College. With math dual enrollment classes I had to take a placement test.", "College Credit")'>College
                 Credit</a>). Sophmore year I took the following notable classes: Algebra II
             H, College Algebra H (College Credit), Game Design (College Credit), and Spanish III. Junior year I decided
             to take a program called west-mec to better my understanding in programming.</p>
 
+        <!-- The lists. -->
         <section id="lists westmec">
             <ul class="left">
                 <h2>Schools</h2>
@@ -83,10 +93,10 @@
         |------|------|
         |   f  |  so  |
         |------|------|
-        |  j   |  sr  |
+        |   j  |  sr  |
         |------|------|
         -->
-
+        <!-- The grid that contains the highschool classes. -->
         <section id="edu">
             <!-- This row is for the freshman and sophmore years -->
             <div class="row">
@@ -137,9 +147,9 @@
                             <p>English III H</p>
                             <p>Pre-Calculus H (Collge Credit)</p>
                             <p>West-Mec Coding Year 1 Semester 1 (College Credit)</p>
-                            <p>AP Calculus</p>
+                            <p>Media Technology (College Credit)</p>
                             <p>AP Physics</p>
-                            <p>AP Computer Science Principles</p>
+                            <p>Brief Calculus (College Credit)</p>
                             <p>West-Mec Coding Year 1 Semester 2 (College Credit)</p>
                         </div>
                     </div>
@@ -150,10 +160,12 @@
                     <div class="row">
                         <div class="column-100">
                             <h2>Senior</h2>
+                            <p>AP Calculus I</p>
                             <p>AP Calculus II</p>
                             <p>Computer Internship</p>
                             <p>English IV</p>
                             <p>Econ & Government</p>
+                            <p>AP Computer Science Principles</p>
                             <p>West-Mec Year 2 Semester 1-2 (College Credit)</p>
                         </div>
                     </div>
@@ -170,7 +182,7 @@
         <p><a href="index.html">Home Page</a> &bull; <a href="#top">Back To Top</a> &bull; <a href="aboutme.html">About
                 Me</a></p>
     </footer>
-
+    <!-- A second footer to be used with the javascript. -->
     <footer id="footer2">
         <p>Ryan Wahl</p>
         <p><a href="index.html">Home Page</a> &bull; <a href="#top">Back To Top</a> &bull; <a href="aboutme.html">About
@@ -193,7 +205,6 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>
