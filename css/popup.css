@@ -4,84 +4,65 @@
     Date: 11.16.18
 
 */
-div#west-mec {
-    background-color: rgb(170, 169, 169);
-    z-index: 1;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    width: 45%;
-}
-
-div#west-mec button {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-
-div#west-mec p {
-    margin: 5px;
-    color: white;
-    margin-left: 10px;
-    text-indent: 1em;
-    margin-bottom: 20px;
-}
-
-div#west-mec h1 {
-    color: white;
-}
-
-div#west-mecheader {
-    width: 100%;
-    background-color: gray;
-    margin-top: 0;
-}
-
-div#west-mecheader p {
-    margin-top: 0;
-}
-
 /* 
     Generic Styles
 */
-
+/* All divs with an id of window */
 div#window {
+    /* Sets the background color to a gray */
     background-color: rgb(170, 169, 169);
+    /* Sets the z-index to 1 so it is ontop of everything. */
     z-index: 1;
+    /* Position of absolute so that it can move around. */
     position: absolute;
+    /* Sets the default position to the cetner */
     top: 50%;
     left: 50%;
+    /* Makes the point in which the menu is moved by top and left the center. (Uses progressive enhancement) */
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
+    /* Sets the width along with what the minimum would be. */
     width: 45%;
     min-width: 300px;
 }
 
+/* The button in the div with an id of window. */
 div#window button {
+    /* Puts the button in the top right corner. */
     position: absolute;
     right: 0;
     top: 0;
 }
 
+/* The paragraph in the div with an id of window. */
 div#window p {
+    /* A margin of 5 pixels all the way around the paragraph */
     margin: 5px;
+    /* Text color of white */
     color: white;
+    /* Sets the left margin to 10 pixels */
     margin-left: 10px;
+    /* Indents the paragraph */
     text-indent: 1em;
+    /* Sets the bottom margin */
     margin-bottom: 20px;
 }
 
 div#window h1 {
+    /* Sets the text color to white. */
     color: white;
 }
 
 div#windowheader {
+    /* Makes the header span completly across the menu. */
     width: 100%;
+    /* Sets the background color to gray */
     background-color: gray;
+    /* Removes any spacing from the top. */
     margin-top: 0;
 }
 
 div#windowheader p {
+    /* Removes any spacing from the top */
     margin-top: 0;
 }

@@ -3,53 +3,11 @@
     Generic Style rules that would apply to the entire site.
     Author: Ryan Wahl
     Date: 9.21.18
-    Pages Useb By: All
+    Pages Used By: All
 */
-
-/* Formatting the page layout */
-
-body {
-    /* min-width: 720px; */
-}
 
 /* Top Naviagtion Bar Styles */
 
-
-
-/* 
-    Info Section Layout 
-    DEPRICATED - to be removed.   
-*/
-
-section#info {
-    float: right;
-    width: 85%;
-}
-
-section#info h2 {
-    text-align: center;
-    text-decoration: underline;
-    font-size: 1.9em;
-}
-
-section#info h3 {
-    text-align: center;
-    font-size: 1.6em;
-}
-
-section#info p {
-    text-indent: 2em;
-}
-
-section#info ul {
-    text-align: center;
-    list-style-type: none;
-}
-
-section#info li::before {
-    content: '\2219';
-    font-size: 2em;
-}
 
 /* 
     All of the link colors.
@@ -57,18 +15,21 @@ section#info li::before {
 
 header>nav a:visited,
 header>nav a:link {
+    /* Sets the background color to black and the text color to white. */
     background-color: black;
     color: white;
 }
 
 header>nav a:visited.active,
 header>nav a:link.active {
+    /* Sets the background color to gray and the text color to white */
     background-color: rgb(151, 150, 150);
     color: white;
 }
 
 header>nav a:hover,
 header>nav a:link {
+    /* Sets the background color to gray and the text color to white */
     background-color: gray;
     color: white;
 }
@@ -79,67 +40,57 @@ h1 {
 }
 
 /* 
-    Section with in id of skills 
-    DEPRECATED - To be removed.
+    Generic Image Styles 
 */
-
-section#skills {
-    float: right;
-    width: 75%;
-}
-
-section#skills li>ul>li {
-    border: 1px solid black;
-    list-style-type: none;
-    margin-right: 10em;
-    padding: 10px;
-    font-size: 1.5em;
-}
-
-section#skills li>ul>li>section {
-    width: 100%;
-    background-color: lightblue;
-    display: inline-block;
-    text-align: center;
-}
-
-/* Generic Image Styles */
 .img-center {
     display: block;
     margin: auto;
 }
 
-/* Media styles */
+/* 
+    Media styles 
+*/
 
 @media only screen and (max-width: 480px) {
+
+    /* Sets the navigation width to 100% so it spans across the entire top. */
     header>nav {
         width: 100%;
     }
 
     header>nav a {
+        /* Removes all of the underlines. */
         text-decoration: none;
     }
 
     header nav ul {
+        /* Sets the display of flex to unordered list */
+        display: -webkit-flex;
         display: flex;
+        /* Sets the flow to column with no wrapping. */
+        -webkit-flex-flow: column nowrap;
         flex-flow: column nowrap;
+        /* Removes the bullet points */
         list-style-type: none;
+        /* Makes the ul span across the screen */
         width: 100%;
+        /* Zero out paddings and margins. */
         padding: 0;
-        display: grid;
-        grid-template-rows: auto auto auto auto auto auto;
-        grid-template-columns: auto;
         margin: 0;
     }
 
     header nav li,
     header nav a {
+        /* Centers the text */
         text-align: center;
+        /* Sets the width to 100% */
         width: 100%;
+        /* Makes the link go from an inline to block. */
         display: block;
     }
 
     header nav a {
+        /* Adds a padding of 5 around the links. */
         padding: 5px;
     }
 
@@ -149,25 +100,32 @@ section#skills li>ul>li>section {
 
     /* Navigation Styles */
     header>nav {
+        /* Sets the display of the nav to table. */
         display: table;
+        /* Makes the nav bar span across the entire screen. */
         width: 100%;
     }
 
     header>nav a {
+        /* Adds a padding of 10 pixels around the link */
         padding: 10px;
+        /* Removes the underline */
         text-decoration: none;
     }
 
     nav>ul {
+        /* Sets the display to table-row */
         display: table-row;
     }
 
     nav>ul>li {
+        /* Sets the display to table-cell */
         display: table-cell;
         text-align: center;
     }
 
     nav>ul>li>a {
+        /* Sets the display to block. */
         display: block;
     }
 }

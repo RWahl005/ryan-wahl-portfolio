@@ -10,28 +10,37 @@
 /* Section Styles */
 
 section {
+    /* Sets the width to 73% and centers the content */
     width: 73%;
     margin: auto;
 }
 
 section p {
+    /* Sets the text to Justify and indents it. */
     text-align: justify;
     text-indent: 1em;
 }
 
 section h2 {
+    /* Centers the text. */
     text-align: center;
 }
 
-/* Footer Styles */
+/* 
+    Footer Styles 
+*/
 
 footer {
+    /* Clears both the left and right margins */
     clear: both;
+    /* Sets the background color to a light gray (despite the name) */
     background-color: darkgray;
+    /* Makes the footer span across the entire page */
     width: 100%;
 }
 
 footer#footer1 {
+    /* Sets the position to fix and puts it at the bottom. It always will stay at the bottom on screen. */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -44,35 +53,39 @@ footer#footer2 {
 }
 
 footer p {
+    /* Cetners the text */
     text-align: center;
     color: white;
 }
 
 footer p:first-of-type {
+    /* Sets the bottom margin to 0 */
     margin-bottom: 0;
 }
 
 footer p:last-of-type {
+    /* Sets the margin top to 0 */
     margin-top: 0;
 }
 
 footer a {
     color: white;
+    /* Removes the underlines for the links */
     text-decoration: none;
 }
 
 footer a:hover {
+    /* Changes the color to a form of white when hovered over. */
     color: rgb(230, 227, 227);
 }
 
-/* List Styles */
-
-
-
-/* Link styles */
+/* 
+    Link styles 
+*/
 
 section p a {
     color: gray;
+    /* Removes the underline from the link */
     text-decoration: none;
 }
 
@@ -80,33 +93,42 @@ section p a:hover {
     color: darkgray;
 }
 
-/* Media Styles */
+/* 
+    Media Styles 
+*/
+/* Mobile Styles */
 @media only screen and (max-width: 480px) {
     ul.center-exp {
+        /* Centers the unordered list */
         width: 100%;
         margin: auto;
         margin-bottom: 5px;
     }
 
     ul.center-achieve {
+        /* Centers theunordered list */
         width: 100%;
         margin: auto;
     }
 }
 
+/* Table and Computer Styles */
 @media only screen and (min-width: 481px) {
     ul.center-exp {
+        /* Centers theunordered list */
         width: 25%;
         margin: auto;
     }
 
     ul.center-achieve {
+        /* Centers theunordered list */
         width: 23%;
         min-width: 200px;
         margin: auto;
     }
 
     #footer2 {
+        /* Removes the second footer. */
         display: none;
     }
 }

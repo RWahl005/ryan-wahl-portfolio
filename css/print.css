@@ -1,38 +1,46 @@
 @charset "utf-8";
 
 /* 
-
     Printer Styles for the printer.
-
+    Author: Ryan Wahl
+    Date: 12.14.18
+    Pages not supported: index.html
 */
 
 #edu {
+    /* Prevents page break within the id of edu */
     page-break-inside: avoid;
 }
 
 .left {
+    /* Removes the class of left float. */
     float: none;
 }
 
 .right {
+    /* Removes the class of right float */
     float: none;
 }
 
 footer {
+    /* Hides the footer */
     display: none;
 }
 
 header {
+    /* Hides the header (Navigation bar) */
     display: none;
 }
 
 body::before {
+    /* Adds my name before the start of every page. */
     content: "Ryan Wahl";
     font-size: 15mm;
     margin-left: 65mm;
 }
 
 #edu::before {
+    /* Adds in high school classes before the id of edu (Education table) */
     content: "High School Classes";
     font-size: 10mm;
     margin-left: 12mm;
