@@ -16,9 +16,9 @@ section {
 }
 
 section p {
-    /* Sets the text to Justify and indents it. */
-    text-align: justify;
-    text-indent: 1em;
+    /* Sets the text to left and indents it. */
+    text-align: left;
+    text-indent: 1.3em;
 }
 
 section h2 {
@@ -49,6 +49,7 @@ footer#footer1 {
 
 footer#footer2 {
     width: 100%;
+    padding: 10px;
 
 }
 
@@ -118,6 +119,7 @@ section p a:hover {
         /* Centers theunordered list */
         width: 25%;
         margin: auto;
+        min-width: 200px;
     }
 
     ul.center-achieve {

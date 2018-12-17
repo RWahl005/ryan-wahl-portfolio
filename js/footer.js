@@ -8,6 +8,21 @@
 
 */
 
+/*
+    - Usage Information -
+    There is no javascript function to be run.
+
+    Html Content:
+    1. Two footers are required.
+    <footer id="footer1">
+        content
+    </footer>
+    <footer id="footer2">
+        content
+    </footer>
+
+*/
+
 // If the page is at the top then change the footer link #2 text color to gray.
 
 if (window.pageYOffset == 0)
@@ -31,7 +46,7 @@ window.onscroll = function (e) {
     if (document.getElementById("footer2") != null) {
         if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
             this.document.getElementById("footer1").style.display = "none";
-            this.document.getElementById("footer2").style.display = "inline-block";
+            this.document.getElementById("footer2").style.display = "block";
             //Fixes a bug where the screen would glitch if you get the scroll at the very edge of the page perfectly.
             window.scrollTo(0, document.body.scrollHeight);
         } else {

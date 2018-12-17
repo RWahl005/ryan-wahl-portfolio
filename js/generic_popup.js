@@ -1,9 +1,46 @@
 /*
     Controls the generic popup menu for westmec.
     Used to dynamicly create popup menus.
+    
+    Author: Ryan Wahl
+    Date: 12.17.18
 */
 
-if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) { //Checks to see if the browser is mobile.
+/*
+    ==========================
+    - Usage Information -
+    Html:
+
+    Within a link add the attribute onclick="". In there put in the javascript code defined below. To make the link clickable the href="#" id put in there.
+        Example:
+        <a href="#" onclick="openmenu('Example', 'Example', 'Example')"> Link </a>
+    JavaScript Usage:
+
+    The function openmenu() is used. The function has 3 parameters, all of which are strings. The first one is the title. The title is the small text at the top of the bar. The second parameter is the body text. The final parameter is the header.
+
+    openmenu('Title', 'Body Text.', 'Header');
+    ==========================
+    Html Dependency:
+    The following must be added to each html file for it to work.
+
+    1. The popup.css file must be linked.
+        <link rel="stylesheet" href="css/popup.css" />
+    2. The javascript (This script) must be linked.
+        <script src="js/generic_popup.js"></script>
+    3. The following html code must be added for the menu itself:
+        <div id="window">
+            <div id="windowheader">
+                <p>Title</p>
+            </div>
+            <h1>Header</h1>
+            <button onclick="closemenu()">X</button>
+            <p>Body</p>
+        </div>
+    ==========================
+*/
+
+// Checks to see if the browser is mobile.
+if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
     //Gets the html portion of the popup menu.
     var elm = document.getElementById("window");
 

@@ -48,6 +48,7 @@ section>nav a {
 }
 
 section>nav a:hover {
+    /* Changes the background color to gray. */
     background-color: rgb(95, 94, 94);
 }
 
@@ -75,6 +76,7 @@ section>p {
 }
 
 h1 {
+    /* Text color white. */
     color: white;
 }
 
@@ -100,6 +102,7 @@ h1 {
         display: block;
         margin: 0;
         width: 100%;
+        /* Centers the text. */
         text-align: center;
         padding-right: 0;
     }
