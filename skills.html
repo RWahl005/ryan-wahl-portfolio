@@ -11,7 +11,6 @@
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>Ryan Wahl Portfolio</title>
-    <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <link rel="manifest" href="site.webmanifest">
@@ -23,6 +22,7 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="stylesheet" href="css/subpages.css">
     <link rel="stylesheet" href="css/popup.css">
+    <link rel="stylesheet" href="css/print.css" media="print">
 </head>
 
 <body>
@@ -35,31 +35,32 @@
                 <li><a href="experience.html">Experience</a></li>
                 <li><a href="skills.html" class="active">Skills</a></li>
                 <li><a href="education.html">Education</a></li>
-                <li><a href="acheivements.html">Acheivements</a></li>
+                <li><a href="acheivements.html">Achievements</a></li>
                 <li><a href="aboutme.html">About Me</a></li>
             </ul>
         </nav>
     </header>
-    <div id="west-mec">
-        <div id="west-mecheader">
+    <div id="window">
+        <div id="windowheader">
             <p>What is West-Mec?</p>
         </div>
-        <h1>West-Mec</h1>
+        <h1>West-MEC</h1>
         <button onclick="closemenu()">X</button>
-        <p>West-Mec is a program in Glendale that provides an education. It has a coding program that teaches about
+        <p>West-MEC is a program in Glendale that provides an education. It has a coding program that teaches about
             html, css, javascript, and php. The program is a two year program.</p>
     </div>
 
     <section>
         <h1>Skills</h1>
 
-        <p>I know several programming languages. A lot of what I know is self taught. With Java I learned from two
+        <p>I know several programming languages. A lot of what I know is self-taught. With Java I learned from two
             ID-Tech camps. These camps are a week long and teach you the basics of that language. The rest I learned
             through trial-and-error. One thing that speed up my knowledge of Java was that I programmed plugins for a
-            game as a hobby. That forced me to learn good programming teqniques. C# was also learned through a little
+            game as a hobby. That forced me to learn good programming techniques. C# was also learned through a little
             bit of a camp but the majority was from my knowledge of Java since the languages are so similar. C++ was
             learned through a camp and my knowledge of previous languages. HTML and CSS was self-taught and through the
-            program <a onclick="openmenu()" href="#westmec">west-mec</a>.</p>
+            program <a onclick="openmenu('What is West-MEC?', 'West-MEC is a program in Glendale that provides an education. It has a coding program that teaches about html, css, javascript, and php. The program is a two year program.', 'West-MEC')"
+                href="#">West-MEC</a>.</p>
         <p>I have made several projects in Java. My top projects are a <a href="https://github.com/ryandw11/New-Java-Tic-Tac-Toe">gui
                 - tic-tac-toe game</a> and a <a href="https://github.com/ryandw11/Game-Engine">pong
                 replica</a>. I
@@ -87,6 +88,11 @@
         <p><a href="index.html">Home Page</a> &bull; <a href="#top">Back To Top</a> &bull; <a href="aboutme.html">About
                 Me</a></p>
     </footer>
+    <footer id="footer2">
+        <p>Ryan Wahl</p>
+        <p><a href="index.html">Home Page</a> &bull; <a href="#top">Back To Top</a> &bull; <a href="aboutme.html">About
+                Me</a></p>
+    </footer>
 
     <!-- 
 
@@ -96,7 +102,7 @@
 
     <!-- This is used to contorl the footer. -->
     <script src="js/footer.js"></script>
-    <script src="js/westmec.js"></script>
+    <script src="js/generic_popup.js"></script>
 
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
@@ -105,7 +111,6 @@
         window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')
     </script>
     <script src="js/plugins.js"></script>
-    <script src="js/main.js"></script>
 
     <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
     <script>

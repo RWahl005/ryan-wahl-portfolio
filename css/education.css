@@ -1,6 +1,7 @@
 @charset "utf-8";
 /* 
     CSS file for the page education.html.
+    Page Designed For: education.html
     Author: Ryan Wahl
     Date: 11.13.18
 */
@@ -8,86 +9,129 @@
 /* For the section of edu (The grid of classes) */
 
 section#edu {
+    /* Centers the grid */
     width: 75%;
     margin-left: auto;
     margin-right: auto;
     background-color: rgb(74, 197, 130);
+    /* Sets the corners to circles */
     border-radius: 20px;
 }
 
 body {
+    /* Sets the box size to border box so that the borders work */
     box-sizing: border-box;
 }
 
 /* Grids for the grid of classes */
 
 .row {
+    /* Clears both floating on the right and the left */
     clear: both;
 }
 
 .row::after {
+    /* Prevents container collapse */
     clear: both;
     content: "";
     display: table;
 }
 
+/* All elements with a class that starts with column */
 [class^="column"] {
+    /* Floats the element left */
     float: left;
+    /* Sets the box sizing to border box so that borders are including in the width calculation */
     box-sizing: border-box;
 }
 
 .column-50 {
+    /* Sets the width to 50% */
     width: 50%;
 }
 
 .column-100 {
+    /* Sets the width to 100% */
     width: 100%;
 }
 
 /* Education Grid Styles */
 
 #edu h2 {
+    /* Centers the text and makes it white */
     text-align: center;
     color: white;
 }
 
 #edu p::before {
+    /* Inserts in the bullet point and two spaces. */
     content: "\2022\0020\0020";
 }
 
 #edu p {
+    /* Centers the text, makes it white, and adds a margin of 2 pixels around it. */
     text-align: center;
     color: white;
     margin: 2px;
 }
 
+/* Defines the border of the pages. */
+/* 50% width odd columns */
 .column-50:nth-of-type(odd) {
+    /* A border on the right that is 1 pixel, solid, and white. */
     border-right: 1px solid white;
 }
 
-
+/* Odd rows */
 #edu>.row:nth-of-type(odd) {
+    /* A border on the bottom that is 1 pixel, solid, and white. */
     border-bottom: 1px solid white;
 }
 
 .column-50 {
+    /* Sets the bottom padding to 10 pixels */
     padding-bottom: 10px;
 }
 
 /* List Styles */
 
 section#list {
+    /* Clears botht he left and right floats. */
     clear: both;
 }
 
 section#edu {
+    /* Clears botht he left and right floats. */
     clear: both;
 }
 
 .right {
+    /* Floats elements right */
     float: right;
 }
 
 .left {
+    /* Floats elements left */
     float: left;
+}
+
+/* Mobile Styles */
+
+@media only screen and (max-width: 480px) {
+    section#edu {
+        /* Removes the grid */
+        display: none;
+    }
+
+    .right {
+        /* Stops floating and is made a block */
+        display: block;
+        float: none;
+    }
+
+    .left {
+        /* Stops floating and is made a block. */
+        display: block;
+        float: none;
+    }
 }

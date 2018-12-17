@@ -1,77 +1,115 @@
 @charset "utf-8";
 /*
    CSS Styles for the index page
-   Page Refrenced: index.html
+   Page Designed For: index.html
    Author: Ryan Wahl
    Date: 11.13.18
 */
 
 /* Html Styles */
 html {
-    /* background-color: rgba(128, 128, 128, 0.548); */
+    /* Sets the background image to the code backing */
     background: url("../img/code-back.jpg");
-    background-repeat: no-repeat;
+    /* Makes the image repeat */
+    background-repeat: repeat;
+    /* Sets the size to 100% */
+    background-size: 100%;
 }
 
 html,
 body,
 section {
+    /* Sets the width to 100% */
     width: 100%;
 }
 
 /* Navigation Styles */
 section>nav {
+    /* Sets the display to table */
     display: table;
+    /* It has a width of 75% and is centered. */
     width: 75%;
     margin: auto;
     margin-top: 2em;
 }
 
 section>nav a {
+    /* A padding of 10 around the link */
     padding: 10px;
+    /* Removes the link underlines */
     text-decoration: none;
+    /* Adds the background color */
     background-color: rgb(73, 73, 73);
+    /* Centers the buttons */
     width: 30%;
     margin: auto;
+    /* Sets the text color to white */
     color: white;
 }
 
 section>nav a:hover {
+    /* Changes the background color to gray. */
     background-color: rgb(95, 94, 94);
 }
 
-section>ul {
-    display: table-row;
-}
-
-section>ul>li {
-    display: table-cell;
-    text-align: center;
-}
-
-section>ul>li>a {
-    display: block;
-}
+/* */
 
 /* Figure Image Styles */
 
 figure {
+    /* Centers the image */
     display: block;
-    width: 50%;
+    width: 20%;
     margin-left: auto;
     margin-right: auto;
 }
 
 figure img {
+    /* Makes the image semi transparent */
     width: 100%;
-    opacity: 0.9;
 }
 
 /* Section Styles */
 section>p {
+    /* Centers the text */
     text-align: center;
 }
 
 h1 {
+    /* Text color white. */
     color: white;
+}
+
+/* Media Styles */
+
+@media only screen and (max-width: 480px) {
+    body {
+        min-width: 0px;
+        width: 100%;
+    }
+
+    section nav {
+        /* Puts the navigation list at the bottom of the page */
+        display: block;
+        position: absolute;
+        margin: 0;
+        width: 100%;
+        bottom: 0;
+    }
+
+    section nav a {
+        /* Makes the link span across the entire screen */
+        display: block;
+        margin: 0;
+        width: 100%;
+        /* Centers the text. */
+        text-align: center;
+        padding-right: 0;
+    }
+
+    section nav ul {
+        /* Removes the padding and margin. */
+        margin: 0;
+        padding: 0;
+    }
 }
