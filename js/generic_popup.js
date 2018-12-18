@@ -104,6 +104,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             document.onmouseup = closeDragElement;
             // call a function whenever the cursor moves
             document.onmousemove = elementDrag;
+            //change the mouse pointer to the grabbed.
+            document.getElementById(elm.id + "header").style.cursor = "grabbing";
         }
 
         function elementDrag(e) {
@@ -125,6 +127,8 @@ if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(naviga
             // stop moving the menu when mouse button is released
             document.onmouseup = null;
             document.onmousemove = null;
+            //Change the mouse pointer the the grab.
+            document.getElementById(elm.id + "header").style.cursor = "grab";
         }
     }
 }

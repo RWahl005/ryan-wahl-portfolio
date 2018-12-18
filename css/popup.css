@@ -66,3 +66,7 @@ div#windowheader p {
     /* Removes any spacing from the top */
     margin-top: 0;
 }
+
+div#windowheader:hover {
+    cursor: grab;
+}

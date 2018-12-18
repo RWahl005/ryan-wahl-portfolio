@@ -1,0 +1,75 @@
+/* 
+    About.css
+    Author: Ryan Wahl
+    Date: 12.18.18
+
+    page for: aboutme.html
+*/
+
+/* Navigation Styles */
+section>nav {
+    /* Sets the display to table */
+    display: table;
+    /* It has a width of 75% and is centered. */
+    width: 75%;
+    margin: auto;
+    margin-top: 2em;
+}
+
+section>nav a {
+    /* A padding of 10 around the link */
+    padding: 10px;
+    /* Removes the link underlines */
+    text-decoration: none;
+    /* Adds the background color */
+    background-color: rgb(73, 73, 73);
+    /* Centers the buttons */
+    width: 30%;
+    margin: auto;
+    /* Sets the text color to white */
+    color: white;
+}
+
+section>nav a:hover {
+    /* Changes the background color to gray. */
+    background-color: rgb(95, 94, 94);
+}
+
+/* 
+    Mobile Styles
+*/
+@media only screen and (max-width: 480px) {
+    body {
+        min-width: 0px;
+        width: 100%;
+    }
+
+    section nav {
+        /* Puts the navigation list at the bottom of the page */
+        display: block;
+        margin: 0;
+        width: 100%;
+    }
+
+    section nav a {
+        /* Makes the link span across the entire screen */
+        display: block;
+        margin: 0;
+        width: 100%;
+        /* Centers the text. */
+        text-align: center;
+        padding-right: 0;
+    }
+
+    section nav ul {
+        /* Removes the padding and margin. */
+        margin: 0;
+        padding: 0;
+
+    }
+
+    section {
+        width: 100%;
+        margin: 0;
+    }
+}

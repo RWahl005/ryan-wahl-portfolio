@@ -95,6 +95,13 @@ section p a:hover {
 }
 
 /* 
+    Float Functions
+*/
+.right {
+    float: right;
+}
+
+/* 
     Media Styles 
 */
 /* Mobile Styles */

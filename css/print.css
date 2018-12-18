@@ -45,3 +45,7 @@ body::before {
     font-size: 10mm;
     margin-left: 12mm;
 }
+
+.print-break-avoid {
+    page-break-inside: avoid;
+}
